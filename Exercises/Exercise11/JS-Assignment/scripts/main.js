@@ -4,7 +4,15 @@ var arrayItems = [];
 
 function update() {
     //////////////////////Your Code Starts here
-
+    if (getElm('firstName').classList.contains('invalid')) {
+      getElm('firstName').classList.remove('invalid');
+    }
+    if (getElm('lastName').classList.contains('invalid')) {
+      getElm('lastName').classList.remove('invalid');
+    }
+    if (getElm('emailAddress').classList.contains('invalid')) {
+      getElm('emailAddress').classList.remove('invalid');
+    }
 
     ///Part 1
     var firstName = getValue('firstName');
@@ -12,10 +20,12 @@ function update() {
     getElm('p1_fullName').innerHTML = firstName + " " + lastName;
     getElm('p1_valid').innerHTML = (firstName !== "" && lastName !== "");
     getElm('p1_fullNameLength').innerHTML = firstName.length + lastName.length;
-
-
-
-
+    if (firstName === "") {
+      getElm('firstName').classList.add('invalid');
+    }
+    if (lastName === "") {
+      getElm('lastName').classList.add('invalid');
+    }
 
     // Part 2
     var emailAddress = getValue('emailAddress');
@@ -23,6 +33,9 @@ function update() {
     getElm('p2_email').innerHTML = emailAddress;
     getElm('p2_valid').innerHTML = emailPattern.test(emailAddress);
     getElm('p2_emailLength').innerHTML = emailAddress.length;
+    if (!emailPattern.test(emailAddress)) {
+      getElm('emailAddress').classList.add('invalid');
+    }
 
 
     // Part 3
@@ -44,7 +57,6 @@ function update() {
     var currentFruit = "";
     ////////////////////////Your code ends here.
     for (var x=0;x<fruits.length;++x) {
-      debugger;
       if (currentFruit !== fruits[x]) {
         fruits2.push(fruits[x]);
       }
