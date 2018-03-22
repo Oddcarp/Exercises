@@ -5,7 +5,7 @@
 var str = "Hello World";
 var y = str.indexOf('W');
 //Answer:
-//y = ????
+//y = 6
 ///
 
 /////////
@@ -14,17 +14,17 @@ var y = str.indexOf('W');
 var str = "Hello World";
 var z = str.indexOf('h');
 //Answer:
-//z = ????
+//z = -1
 ///
 
 
 /////////
 //Question 3
 //What is the value of a?
-var bo = 'true'; 
+var bo = 'true';
 var a = (bo === true);
 //Answer:
-//a = ????
+//a = false
 ///
 
 
@@ -34,7 +34,7 @@ var a = (bo === true);
 var jar = 'jar';
 var b = jar.length;
 //Answer
-//b = ?????
+//b = 3
 ////
 
 
@@ -42,8 +42,8 @@ var b = jar.length;
 //Question 5
 //What is the value of c?
 var c = parseInt('10.33');
-//Answer 
-//c = ?????
+//Answer
+//c = 10
 //
 
 ///////////
@@ -51,7 +51,7 @@ var c = parseInt('10.33');
 //What is the value of d?
 var d = parseFloat('text');
 //Answer
-//d = ??????
+//d = NaN
 //
 
 /////////
@@ -60,7 +60,7 @@ var d = parseFloat('text');
 var arr = ['User', 'Email', 'Phone', 'Address', 'Zip'];
 var x = arr[2];
 //Answer:
-//x = ????
+//x = 'Phone'
 ///
 
 /////////
@@ -70,7 +70,7 @@ var arr2 = ['User', 'Email', 'Phone', 'Address', 'Zip'];
 arr2.push('12');
 var e = arr2.length;
 //Answer:
-//e = ????
+//e = 6
 ///
 
 
@@ -81,7 +81,7 @@ var e = arr2.length;
 var person = { firstname: 'Daniel', lastname: 'Worthy'}
 var f = person.firstname;
 //Answer:
-//f = ????? 
+//f = 'Daniel'
 
 ////////
 //Question 10
@@ -89,5 +89,5 @@ var f = person.firstname;
 var person = { firstname: 'Daniel', lastname: 'Worthy'}
 var g = person.age;
 // Answer:
-// g = ????
+// g = undefined
 //
