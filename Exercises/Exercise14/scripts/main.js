@@ -1,0 +1,104 @@
+
+function reset() {
+    getElm('userName').value = "";
+    getElm('password').value = "";
+    getElm('emailAddress').value = "";
+    getElm('timeZone').selectedIndex = "0"
+    getElm('error-list').innerHTML = "";
+
+
+    if (getElm('userName').classList.contains('invalid')) {
+        getElm('userName').classList.remove('invalid');
+      }
+      if (getElm('password').classList.contains('invalid')) {
+        getElm('password').classList.remove('invalid');
+      }
+      if (getElm('emailAddress').classList.contains('invalid')) {
+        getElm('emailAddress').classList.remove('invalid');
+      }
+      if (getElm('timeZone').classList.contains('invalid')) {
+          getElm('timeZone').classList.remove('invalid');
+        }
+
+}
+
+
+function update() {
+    //////////////////////Your Code Starts here
+    if (getElm('userName').classList.contains('invalid')) {
+      getElm('userName').classList.remove('invalid');
+    }
+    if (getElm('password').classList.contains('invalid')) {
+      getElm('password').classList.remove('invalid');
+    }
+    if (getElm('emailAddress').classList.contains('invalid')) {
+      getElm('emailAddress').classList.remove('invalid');
+    }
+    if (getElm('timeZone').classList.contains('invalid')) {
+        getElm('timeZone').classList.remove('invalid');
+      }
+
+    getElm('error-list').innerHTML = "";
+    var userName = getValue('userName');
+    var emailAddress = getValue('emailAddress');
+    var password = getValue('password');
+    var timeZone = getValue('timeZone');
+    var messages = [];
+    console.log(timeZone);
+
+    //User Name
+    if (userName === "") {
+      getElm('userName').classList.add('invalid');
+      messages.push("Last Name is required")
+    }
+    
+
+
+    // Email
+    var emailPattern = new RegExp("@"); 
+    if (!emailPattern.test(emailAddress)) {
+      getElm('emailAddress').classList.add('invalid');
+      messages.push("A valid email address is required")
+    }
+
+
+    // Password
+    if (password === "") {
+        getElm('password').classList.add('invalid');
+        messages.push("Password is required")
+    }
+
+    // Timezone
+    if (timeZone === "0") {
+        getElm('timeZone').classList.add('invalid');
+        messages.push("Please select a time zone")
+    }
+
+
+    if (messages == "") {
+        isValid = true;
+    }  
+
+    for (i=0;i<messages.length;i++) {
+        getElm('error-list').innerHTML += messages[i] + "<br>";
+    }
+}
+
+
+////
+var btn = document.getElementById('btnUpdate');
+var btnReset = document.getElementById('btnReset');
+btn.addEventListener('click', update);
+btnReset.addEventListener('click', reset);
+
+function getValue(id) {
+    return getElm(id).value;
+}
+
+function getElm(id) {
+    return document.getElementById(id);
+}
+
+function isNumeric(n) {
+  return !isNaN(parseFloat(n)) && isFinite(n);
+}
