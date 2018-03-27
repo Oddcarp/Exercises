@@ -1,0 +1,124 @@
+html {
+    background-color:grey;
+}
+h1 {
+  font-size: 55px;
+  font-weight: normal;
+}
+body {
+    display:block;
+    width: 960px;
+    margin: 0px auto;
+    background-color: azure;
+    font-family: Helvetica, Arial;
+}
+nav, footer {
+  font-size: 12px;
+}
+header {
+    height: 429px;
+    text-align:center;
+    background-color: #30396D;
+    color: white;
+    background-image: url("sky.jpeg");
+
+}
+nav.categories a {
+  font-size: 16px;
+}
+header a {
+    color: white;
+}
+header nav {
+    float:right;
+    padding-top: 5px;
+
+}
+nav img {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  padding: 2px;
+}
+header nav a {
+    margin: 0px 10px;
+}
+header h1 {
+    clear:both;
+    padding-top: 100px;
+
+}
+section {
+    clear: both;
+    display: inline-block;
+    height: 600px;
+    padding: 10px 25px;
+}
+section article {
+    float:left;
+    width: 72%;
+}
+section aside {
+    float:right;
+    width: 22%;
+}
+section nav {
+    display: block;
+    border-bottom: 2px solid #30396D;
+    padding-bottom: 20px;
+}
+section a {
+    color: #000;
+}
+blockquote {
+    margin: auto auto;
+    width: 250px;
+    border: 1px solid #888;
+    padding: 40px;
+    font-style: italic;
+}
+blockquote em {
+    float: right;
+}
+section nav.tags a {
+    display:inline-block;
+    padding: 4px;
+    background-color: white;
+    border: 1px solid #888;
+    margin: 4px;
+}
+footer {
+    height:240px;
+    background-color: #30396D;
+}
+footer a {
+    display:block;
+}
+footer nav {
+    color: white;
+    float:left;
+    padding: 35px 0px;
+    padding-left: 20px;
+    width: 30%;
+
+}
+footer nav a {
+    color: white;
+    margin-top: 8px;
+}
+footer nav.socials a {
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px 1px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration:underline;
+}
