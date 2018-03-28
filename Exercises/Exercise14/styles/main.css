@@ -3,75 +3,142 @@
 }
 
 body {
-    width:500px;
-    margin:20px auto;
+    width: 500px;
+    margin: 20px auto;
 }
 
-input[type=text]{
+input[type=text] {
     border-radius: 10px;
-    padding:10px;
-    border:1px solid black;
+    padding: 10px;
+    border: 1px solid black;
 }
 
-input[type=text]:focus{
+input[type=text]:focus {
     outline: none;
-    border:1px solid blue;
+    border: 1px solid blue;
 }
-input[type=text].invalid{
-    border:1px solid red;
+
+input[type=text].invalid {
+    border: 3px dotted deeppink;
 }
-input[type=password]{
+
+input[type=password] {
     border-radius: 10px;
-    padding:10px;
-
-    border:1px solid black;
+    padding: 10px;
+    border: 1px solid black;
 }
 
-input[type=password]:focus{
+input[type=password]:focus {
     outline: none;
-    border:1px solid blue;
+    border: 1px solid blue;
 }
-input[type=password].invalid{
-    border:1px solid red;
+
+input[type=password].invalid {
+    border: 3px dotted deeppink;
 }
+
 #timeZone {
     border-radius: 10px;
-    padding:10px;
-    border:1px solid black;
-}
-#timeZone.invalid{
-    border:1px solid red;
+    padding: 10px;
+    border: 1px solid black;
 }
 
+#timeZone.invalid {
+    border: 3px dotted deeppink;
+}
 
+section.errors {
+    color: deeppink;
+    font-size: 20px;
+    font-weight: bolder;
+    height: 115px;
+}
 
-.control-panel{
-    width:75%;
-    margin:20px auto;
-    float:none;
+.control-panel {
+    width: 75%;
+    margin: 20px auto;
+    float: none;
     height: auto;
-    text-align:center;
+    text-align: center;
 }
 
-
-.input-group, .output > div{
-    clear:both;
-    margin:10px 0; 
-    overflow:hidden;
-}
-.input-group label{
-    float:left;
-    width:25%;
-    display:block;
+.input-group,
+.output>div {
+    clear: both;
+    margin: 10px 0;
+    overflow: hidden;
 }
 
-.input-group input{
-    display:block;
-    float:right;
-    width:75%;
+.input-group label {
+    float: left;
+    width: 25%;
+    display: block;
 }
-.input-group select{
-    display:block;
-    float:right;
-    width:75%;
+
+.input-group input {
+    display: block;
+    float: right;
+    width: 75%;
+}
+
+.input-group select {
+    display: block;
+    float: right;
+    width: 75%;
+}
+input[type=button] {
+    background-color: #f4511e;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px;
+    opacity: 0.6;
+    transition: 1s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+input[type=button]:hover {
+    opacity: 1;
+}
+
+input[type=checkbox].css-checkbox {
+    position: absolute;
+    z-index: -1000;
+    left: -1000px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+input[type=checkbox].css-checkbox+label.css-label {
+    padding-left: 55px;
+    height: 50px;
+    display: inline-block;
+    line-height: 50px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    font-size: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type=checkbox].css-checkbox:checked+label.css-label {
+    background-position: 0 -50px;
+}
+
+label.css-label {
+    background-image: url(http://csscheckbox.com/checkboxes/u/csscheckbox_7a51de2f6764739a60a1c57b7736eb7f.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

@@ -1,54 +1,61 @@
 <!doctype html>
 <html>
 
-    <head>
-        <title>Assignment 12</title>
-        <link rel="stylesheet" href="styles/main.css">
-    </head>
+<head>
+    <title>Assignment 12</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
 
-    <body>
-       <section id="message">
-            
-        </section>
-        <section class="inputs">
-       </section>
-         <section class="control-panel">
-                <section id="error-list" class="errors"></section>
-        </section>
-        <section class="part-1">
-            <div class="input-group">
-                <label for="userName">User Name</label>
-                <input type="text" name="userName" id="userName" placeholder="User Name" />
-            </div>
-        </section>
-        <section class="part-2">
-            <div class="input-group">
-                <label for="email">Email Address</label>
-                <input type="text" name="emailAddress" id="emailAddress" placeholder="Password" />
-            </div>
-        </section>
-        <section class="part-3">
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="Password" />
-            </div>
-        </section >
-        <section>
-            
-            <div class="input-group">
-                    <label for"timeZone">Time Zone</label>
+<body>
+    <section id="message">
+            <section id="error-list" class="errors"></section>
+    </section>
+    <section class="inputs">
+    </section>
+    <section class="control-panel">
+        
+    </section>
+    <section class="part-1">
+        <div class="input-group">
+            <label for="userName">User Name</label>
+            <input type="text" name="userName" id="userName" placeholder="User Name" />
+        </div>
+    </section>
+    <section class="part-2">
+        <div class="input-group">
+            <label for="email">Email Address</label>
+            <input type="text" name="emailAddress" id="emailAddress" placeholder="Email Address" />
+        </div>
+    </section>
+    <section class="part-3">
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password" />
+        </div>
+    </section>
+
+    <section>
+
+        <div class="input-group">
+            <label for "timeZone">Time Zone</label>
             <select id="timeZone" name="timeZone">
                 <option value="0" selected="selected"></option>
                 <option value="1">Eastern</option>
                 <option value="2">Central</option>
                 <option value="3">Mountain</option>
                 <option value="4">Pacific</option>
-              </select>
-            </div>
-        </section>
-        <input type="button" value="Submit" id="btnUpdate" />
-        <input type="button" value="Reset" id="btnReset" />
-        <script src="scripts/main.js"></script>
-    </body>
+            </select>
+        </div>
+    </section>
+    <section>
+        <div>
+            <input type="checkbox" name="terms" id="terms" value="terms" class="css-checkbox" >
+            <label for="terms" class="css-label">Accept Terms and Conditions</label>
+        </div>
+    </section>
+    <input type="button" value="Submit" id="btnUpdate" />
+    <input type="button" value="Reset" id="btnReset" />
+    <script src="scripts/main.js"></script>
+</body>
 
 </html>
