@@ -1,3 +1,13 @@
+function allFormats(d) {
+  console.log(DateFormatter.getShortTime(d))
+  console.log(DateFormatter.getLongTime(d))
+  console.log(DateFormatter.getShortDate(d))
+  console.log(DateFormatter.getLongDate(d))
+  console.log(DateFormatter.getShortDateTime(d))
+  console.log(DateFormatter.getLongDateTime(d))
+  console.log(DateFormatter.getExtendedDateTime(d))
+}
+
 
 var DateFormatter = {
 
