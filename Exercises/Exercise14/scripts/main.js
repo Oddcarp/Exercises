@@ -88,7 +88,7 @@ function update() {
 
 
   if (messages == "") {
-    isValid = true;
+    alert('Success, was that so hard?!')
   }
 
   for (i = 0; i < messages.length; i++) {
