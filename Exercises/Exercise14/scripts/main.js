@@ -23,6 +23,12 @@ function reset() {
     getElm('terms').checked = false;
   }
 
+  getElm('userName').removeEventListener('keyup',update);
+  getElm('emailAddress').removeEventListener("keyup", update);
+  getElm('password').removeEventListener("keyup",update);
+  getElm('timeZone').removeEventListener("change",update);
+  getElm('terms').removeEventListener("change",update);
+
 }
 
 
@@ -88,6 +94,12 @@ function update() {
   for (i = 0; i < messages.length; i++) {
     getElm('error-list').innerHTML += messages[i] + "<br>";
   }
+
+  getElm('userName').addEventListener('keyup',update);
+  getElm('emailAddress').addEventListener("keyup", update);
+  getElm('password').addEventListener("keyup",update);
+  getElm('timeZone').addEventListener("change",update);
+  getElm('terms').addEventListener("change",update);
 }
 
 
@@ -96,6 +108,7 @@ var btn = document.getElementById('btnUpdate');
 var btnReset = document.getElementById('btnReset');
 btn.addEventListener('click', update);
 btnReset.addEventListener('click', reset);
+
 
 function getValue(id) {
   return getElm(id).value;
