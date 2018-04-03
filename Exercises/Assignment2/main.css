@@ -100,7 +100,8 @@ footer nav {
     float:left;
     padding: 35px 0px;
     padding-left: 20px;
-    width: 30%;
+    width: 33.3333%;
+    box-sizing: border-box;
 
 }
 footer nav a {
@@ -114,6 +115,8 @@ footer nav.socials a {
     padding-top: 10px;
     padding-bottom: 10px;
     margin: 10px 1px;
+    margin-right: 20px;
+    
 }
 a {
     text-decoration: none;
