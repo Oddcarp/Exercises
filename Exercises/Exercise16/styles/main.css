@@ -43,3 +43,29 @@ section > section > div{
 .part3{
     display:none;
 }
+
+a[target] {
+  color:blue;
+}
+
+input[type="text"] {
+  background-color: deeppink;
+}
+
+input[type="checkbox"] {
+  background-color: yellow;
+}
+
+a[href^="https"] {
+  color: maroon;
+  cursor: crosshair;
+}
+
+a[href$=".edu"] {
+  color: orange;
+  cursor: crosshair;
+}
+a[href*="mart"] {
+  color: paleturquoise;
+  cursor: crosshair;
+}
