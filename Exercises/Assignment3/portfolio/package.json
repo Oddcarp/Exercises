@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "In the folder labeled 'basic' you will find an HTML document with content that should display in a modal.  Write code to fulfill the following requirements.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp dev"
+  },
+  "author": "Ray K",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "jquery.secretnav": "^0.1.8",
+    "jquery": "^3.3.1",
+    "modernizr": "^3.6.0"
+  }
+}
