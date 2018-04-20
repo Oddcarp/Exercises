@@ -17,10 +17,10 @@ body {
     width:40%;
 }
 
-blue{
+.blue{
     border:1px solid blue;
 }
 
-red{
+.red{
     border: 1px solid red;
 }

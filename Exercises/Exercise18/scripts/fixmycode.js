@@ -1,12 +1,12 @@
 $(document).ready(function () {
 
 
-    $('#btnAdNumbers').on('click', function () {
+    $('#btnAddNumbers').on('click', function () {
         /*
             Retrieve the numbers from the input fields
         */
-        var firstNumber = $('txtFirstNumber').val();
-        var secondNumber = $('txtSecondNumber').val();
+        var firstNumber = parseInt($('#txtFirstNumber').val());
+        var secondNumber = parseInt($('#txtSecondNumber').val());
         
         /*
             Add the two numbers together
@@ -18,17 +18,17 @@ $(document).ready(function () {
             If our sum is less than 10, add a red class
         */
         if(sum > 10){
-            $('txtThirdNumber').addClass('.blue');
-            $('txtThirdNumber').RemoveClass('red');
-        }else{
-            $('txtThirdNumber').addClass('red');
-            $('txtThirdNumber').RemoveClass('.blue');
-        }
+            $('#txtThirdNumber').addClass('blue');   
+            $('#txtThirdNumber').removeClass('red');         
+        }else{           
+            $('#txtThirdNumber').addClass('red');
+            $('#txtThirdNumber').removeClass('blue');
+        };
 
         /*
             Update the third input field with our value.
         */
-        $('#txtThirNumber').val() = sum;
+        $('#txtThirdNumber').val(sum);
     });
 
 
