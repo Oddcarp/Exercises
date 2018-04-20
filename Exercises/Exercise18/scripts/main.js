@@ -8,9 +8,10 @@ $(document).ready(function () {
         let newList = [];
 
         for (i = 0; i < response.length; i++) {
-            newList += "<li>Index: " + response[i].id + " Title: " + response[i].title + "</li>";
+            newItem = "<li>Index: " + response[i].id + " Title: " + response[i].title + "</li>";
+            append.append(newItem);
         }
-        append.append(newList);
+       
     });
 
     //
@@ -21,9 +22,10 @@ $(document).ready(function () {
         let newList = [];
 
         for (i = 0; i < response.length; i++) {
-            newList += "<li>Index: " + response[i].id + " Title: " + response[i].title + "</li>";
+            newList = "<li>Index: " + response[i].id + " Title: " + response[i].title + "</li>";
+            prepend.prepend(newList);
         }
-        prepend.prepend(newList);
+        
     });
 
 });
