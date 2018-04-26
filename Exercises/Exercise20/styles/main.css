@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 .main-content{
     width:960px;
     margin:20px auto;
@@ -15,4 +16,39 @@
     float:right;
     width:50%;
 }
+
+@media screen and (max-width:500px){
+    /*rules apply to screen widths below 320px*/
+    html {
+        color: blue;
+    }
+}
+@media screen and (min-width:400px) and (max-width:800px){
+    /*rules apply to screen widths 320px to 600px;*/
+    p{
+        background-color:grey;
+    }
+}
+@media screen and (min-width:960px){
+    /*rules apply to screen widths below 320px*/
+    ol {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:480px){
+    /*rules apply to screen widths below 320px*/
+    .main-content {
+        width: 100%;
+    }
+    .fl{
+        clear: both;
+        width: 100%;
+    }
+    
+    .fr{
+        clear: both;
+        width: 100%;
+    }
+}
+   
 

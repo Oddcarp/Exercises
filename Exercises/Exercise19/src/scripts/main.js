@@ -10,10 +10,17 @@ $(document).ready(function () {
     function savePost(e) {
         e.preventDefault();
         var postObj = $('#frm').serialize();
-
+        $.post(url,postObj,function(response){
+            loadPosts();
+        });
     }
 
     function loadPosts() {
+        $.get( url, function(response) {
+            let newHtml = convertResponseToHTML(response);
+            $('#main').html(newHtml);
+          });
+
 
    }
 
