@@ -110,3 +110,141 @@ footer>nav>a {
     padding: 0 10px;
     display:block;
 }
+@media only screen and (min-width: 600px) {
+
+    .class2 nav,
+.class7 li,
+section>aside>section>h3 {
+    text-align: center
+}
+
+.class7,
+.class8 article,
+footer {
+    overflow: hidden
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+
+}
+
+a {
+    color: #a00;
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+.main-container {
+    margin: 0 auto;
+}
+
+.main-header {
+    margin: 10px 0
+}
+
+.main-header nav {
+    background: #a00;
+    text-align: center;
+}
+
+.main-header nav a {
+    color: #fff;
+    display: inline-block;
+    font-size: 24px;
+    padding: 5px 15px
+}
+
+section.hero {
+    text-align:center;
+}
+.hero img {
+    width: 620px;
+    height: auto;
+    
+}
+
+section {
+    clear: both;
+    margin: 10px auto
+}
+
+section .section-header {
+    color: #a00;
+    border: 1px solid #a00;
+    border-left: none;
+    border-right: none;
+    text-align: center
+}
+
+section .article-list {
+    display: block;
+    float:left;
+    width: 60%;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.article-list article {
+    border-bottom: 1px solid #a00;  
+    height: 200px; 
+}
+
+.article-list article img {
+    display: block;
+    float:left;
+    width: 48%;
+    padding: 10px
+}
+.article-list article p,  {
+    float: right;
+}
+
+section>aside {
+    text-align: center;
+    float:right;
+    display:block;
+    width: 30%;
+}
+
+.sponsors {
+    margin-top: 10px;
+}
+.sponsors>.sponsor-ads {
+    text-align: center;
+}
+
+.sponsors>.sponsor-ads>img {
+    display: block;
+    width: 50%;
+    padding: 10px
+}
+
+footer {    
+    padding: 20px 0
+}
+
+footer>h3 {
+    margin: 0
+}
+
+footer>nav {
+}
+
+footer>nav>a {
+    padding: 0 10px;
+    float:right;
+}
+
+}
