@@ -1,5 +1,6 @@
 body,
 ul {
+    font-family: 'Roboto', serif;
     padding: 0
 }
 
@@ -14,6 +15,9 @@ body {
 nav a {
     color: #fff;
     text-decoration: none
+}
+i {
+    float:right;
 }
 
 ul {
