@@ -13,66 +13,66 @@
     </head>
 
     <body>
-        <div>
-            <header>
-                <div>
+        <div class="container">
+            <header class="row">
+                <div class="col-md">
                     <img src="logo.svg" alt="">
                 </div>
-                <div>
-                    <nav>
-                        <a href="#">Animals</a>
-                        <a href="#">Architecture</a>
-                        <a href="#">Technology</a>
-                        <a href="#">Nature</a>
+                <div class="row">
+                    <nav class>
+                        <a class="col col-md-3" href="#">Animals</a>
+                        <a class="col col-md-3" href="#">Architecture</a>
+                        <a class="col col-md-3" href="#">Technology</a>
+                        <a class="col col-md-3" href="#">Nature</a>
                     </nav>
                 </div>
 
             </header>
-            <section>
-                <div>
-                    <img src="https://placeimg.com/1200/480/any" alt="">
+            <section class="row">
+                <div class="col-12 mb-2 mt-2">
+                    <img class="w-100" src="https://placeimg.com/1110/480/any" alt="">
                 </div>
             </section>
             <!-- Start Cards -->
-            <div>
+            <div class="row">
                 <!-- Card -->
-                <div>
-                    <div>
-                        <img src="https://placeimg.com/640/480/animals">
-                        <div>
-                            <h4>Animals</h4>
-                            <a href="#">View Animals</a>
+                <div class="col-12 col-md-6 col-lg-3 mb-1">
+                    <div class="card">
+                        <img class="card-img-top" src="https://placeimg.com/640/480/animals">
+                        <div class="card-body">
+                            <h4 class="card-title">Animals</h4>
+                            <button type="button" class="btn btn-primary">View Animals</button>
                         </div>
                     </div>
                 </div>
                 <!-- Card -->
-                <div>
-                    <div>
-                        <img src="https://placeimg.com/640/480/arch">
-                        <div>
-                            <h4>Architecture</h4>
-                            <a href="#">View Architecture</a>
+                <div class="col-12 col-md-6 col-lg-3 mb-1">
+                    <div class="card">
+                        <img class="card-img-top" src="https://placeimg.com/640/480/arch">
+                        <div class="card-body">
+                            <h4 class="card-title">Architecture</h4>
+                            <button type="button" class="btn btn-success">View Architecture</button>
                         </div>
                     </div>
 
                 </div>
                 <!-- Card -->
-                <div>
-                    <div>
-                        <img src="https://placeimg.com/640/480/tech">
-                        <div>
-                            <h4>Technology</h4>
-                            <a href="#">View Technology</a>
+                <div class="col-12 col-md-6 col-lg-3 mb-1">
+                    <div class="card">
+                        <img class="card-img-top" src="https://placeimg.com/640/480/tech">
+                        <div class="card-body">
+                            <h4 class="card-title">Technology</h4>
+                            <button type="button" class="btn btn-danger">View Technology</button>
                         </div>
                     </div>
                 </div>
                 <!-- Card -->
-                <div>
-                    <div>
-                        <img src="https://placeimg.com/640/480/nature">
-                        <div>
-                            <h4>Nature</h4>
-                            <a href="#">View Nature</a>
+                <div class="col-12 col-md-6 col-lg-3 mb-1">
+                    <div class="card">
+                        <img class="card-img-top" src="https://placeimg.com/640/480/nature">
+                        <div class="card-body">
+                            <h4 class="card-title">Nature</h4>
+                            <button type="button" class="btn btn-warning">View Nature</button>
                         </div>
                     </div>
                 </div>
@@ -80,25 +80,43 @@
             </div>
             <!-- Start Form -->
             <div>
-                <form>
-                    <div>
-                        <label for="formYourName">Name</label>
-                        <input type="text" id="formYourName" placeholder="Your Name">
+                <form class="needs-validation" novalidate>
+                    <div class="form-group">
+                        <label class="col-form-label" for="formYourName">Name</label>
+                        <input type="text" class="form-control" id="formYourName" placeholder="Your Name">
+                        <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                          <div class="invalid-feedback">
+                            Your Name is Required
+                          </div>
                     </div>
-                    <div>
-                        <label for="formEmail">Email</label>
-                        <input type="text" id="formEmail" placeholder="Your Email">
+                    <div class="form-group">
+                        <label class="col-form-label" for="formEmail">Email</label>
+                        <input type="text" class="form-control" id="formEmail" placeholder="Your Email">
+                        <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                          <div class="invalid-feedback">
+                            Your Email is required
+                          </div>
                     </div>
-                    <div>
-                        <label for="formMessage">Message</label>
-                        <textarea id="formMessage" placeholder="Your Message"></textarea>
+                    <div class="form-group">
+                        <label class="col-form-label" for="formMessage">Message</label>
+                        <textarea class="form-control" id="formMessage" placeholder="Your Message"></textarea>
+                        <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                          <div class="invalid-feedback">
+                            Your Message is required.
+                          </div>
                     </div>
-                    <div>
-                        <button type="button" id="btnSubmit">Go somewhere</button>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-primary" id="btnSubmit">Go somewhere</button>
                     </div>
 
                 </form>
-                <div id="thankyou" style="display: none">
+                <div class="my-5" id="thankyou" style="display: none">
                     <h2>Thank You For Reaching Out!</h2>
                 </div>
             </div>
@@ -108,8 +126,10 @@
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
             crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
