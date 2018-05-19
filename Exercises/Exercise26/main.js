@@ -27,13 +27,19 @@ var productList = [
     {product: 'Shoes', price: 15.00, color: 'Blue'}
 ];
 
+
+
     The total is 35.
 */
+
+
+    
 function getTotalCost(cart) {
     var totalCost = 0;
-
-    /*Calculate the total cost of the cart.*/
-    /* Your Code Here */
+    productList.forEach(function(product) {
+        totalCost += product.price;
+    });
+    
 
     return totalCost;
 }
@@ -62,7 +68,7 @@ function getTotalCostPlusTax(cart) {
     var totalCart = getTotalCost(cart);
 
     //Your Code Here
-
+    costPlusTax += (totalCart * TAX + totalCart);
 
     return costPlusTax;
 }
@@ -78,7 +84,13 @@ console.log(totalCostPlusTax);
 
 
 //3.1 -  Select the element with the id 'title' and add the class 'color' to it.
+$('#title').addClass("color");
 
 //3.2 - Select the odd articles  inside the '.container' element.  Add the class 'odd' to them.
 
+$('.container article:odd').addClass("odd");
+
 //3.3 - Select and remove the class 'active' from the Home nav link. Add active to the 'About' link.
+
+$('.home').removeClass("active");
+$('.about').addClass("active");
